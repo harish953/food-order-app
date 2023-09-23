@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import RES_LIST from "../utils/mockData";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
-  //   console.log(RES_LIST);
   //state variable
   const [listOfRestaurants, setListOfRestaurant] = useState(RES_LIST);
   const [filteredRestaurants, setFilteredRestaurant] = useState([]);
@@ -72,10 +72,11 @@ const Body = () => {
         </div>
       </div>
       <div className="res-container">
-        {filteredRestaurants.map((res) => {
-          // console.log(res?.info?.id);
-          return <RestaurantCard key={res.info?.id} resObj={res} />;
-        })}
+        {filteredRestaurants.map((res) => (
+          <Link to={`/restaurants/${res.info.id}`}>
+            <RestaurantCard key={res.info.id} resObj={res} />
+          </Link>
+        ))}
       </div>
     </div>
   );
