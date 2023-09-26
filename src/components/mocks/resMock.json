@@ -1,0 +1,101 @@
+{
+  "info": {
+    "id": "141635",
+    "name": "Dosa Vosa",
+    "cloudinaryImageId": "akajgetevooghwtznw56",
+    "locality": "Friends Enclave",
+    "areaName": "Sector 49",
+    "costForTwo": "₹150 for two",
+    "cuisines": ["South Indian", "Beverages", "Snacks", "Indian"],
+    "avgRating": 4.3,
+    "veg": true,
+    "feeDetails": {
+      "restaurantId": "141635",
+      "fees": [
+        {
+          "name": "BASE_DISTANCE",
+          "fee": 9300
+        },
+        {
+          "name": "BASE_TIME"
+        },
+        {
+          "name": "ANCILLARY_SURGE_FEE"
+        }
+      ],
+      "totalFee": 9300
+    },
+    "parentId": "74322",
+    "avgRatingString": "4.3",
+    "totalRatingsString": "5K+",
+    "sla": {
+      "deliveryTime": 34,
+      "lastMileTravel": 9.1,
+      "serviceability": "SERVICEABLE",
+      "slaString": "34 mins",
+      "lastMileTravelString": "9.1 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2023-09-26 22:30:00",
+      "opened": true
+    },
+    "badges": {
+      "imageBadges": [
+        {
+          "imageId": "v1695133679/badges/Pure_Veg111.png",
+          "description": "pureveg"
+        }
+      ]
+    },
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "imageBased": {
+          "badgeObject": [
+            {
+              "attributes": {
+                "description": "pureveg",
+                "imageId": "v1695133679/badges/Pure_Veg111.png"
+              }
+            }
+          ]
+        },
+        "textBased": {},
+        "textExtendedBadges": {}
+      }
+    },
+    "aggregatedDiscountInfoV3": {
+      "header": "₹125 OFF",
+      "subHeader": "ABOVE ₹249",
+      "discountTag": "FLAT DEAL"
+    },
+    "orderabilityCommunication": {
+      "title": {},
+      "subTitle": {},
+      "message": {},
+      "customIcon": {}
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+  },
+  "analytics": {
+    "context": "seo-data-71ecd8df-4263-4482-bb2c-7a09b810b52f"
+  },
+  "cta": {
+    "link": "https://www.swiggy.com/restaurants/dosa-vosa-friends-enclave-sector-49-noida-1-141635",
+    "text": "RESTAURANT_MENU",
+    "type": "WEBLINK"
+  },
+  "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}

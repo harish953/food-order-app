@@ -7,7 +7,7 @@ const Header = () => {
   const [btnName, setBtnName] = useState("Sign In");
   const onlineStatus = useOnlineStatus();
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
 
   return (
     <div className="flex justify-between  bg-gradient-to-r from-slate-100 to-orange-500 shadow-md ">

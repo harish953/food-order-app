@@ -6,8 +6,12 @@ const RestaurantCard = (props) => {
   //   console.log(resObj.resImage);
   const { cloudinaryImageId, cuisines, avgRating, costForTwo, name } =
     resObj?.info;
+  // console.log(resObj);
   return (
-    <div className="m-4 p-4 w-[250px] bg-white-100 hover:bg-gray-200 hover:scale-95 transform transition-transform rounded-xl">
+    <div
+      data-testid="resCard"
+      className="m-4 p-4 w-[250px] bg-white-100 hover:bg-gray-200 hover:scale-95 transform transition-transform rounded-xl"
+    >
       <img
         className="rounded-xl h-[175px] w-[250px] m-0 "
         src={RES_IMAGE + cloudinaryImageId}

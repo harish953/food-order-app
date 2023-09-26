@@ -19,7 +19,10 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6214688&lng=77.39416539999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    // console.log(json);
+    console.log(
+      json.data.cards[5]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants[1].info.feeDetails.restaurantId
+    );
     setListOfRestaurant(
       json.data.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
@@ -37,6 +40,7 @@ const Body = () => {
       <div className="filter-btn flex">
         <div className="search m-2 p-4">
           <input
+            data-testid="searchInput"
             type="text"
             className="border border-solid border-black rounded-2xl px-4 py-2"
             placeholder="Search..."
@@ -70,11 +74,14 @@ const Body = () => {
       </div>
       <div className="flex flex-wrap">
         {filteredRestaurants.map((res) => (
-          <Link to={`/restaurants/${res.info.id}`}>
+          <Link to={`/restaurants/${res.info.feeDetails.restaurantId}`}>
             {res.info.promoted === true ? (
-              <RestaurantCardPromoted key={res.info.id} resObj={res} />
+              <RestaurantCardPromoted
+                key={res.info.feeDetails.restaurantId}
+                resObj={res}
+              />
             ) : (
-              <RestaurantCard key={res.info.id} resObj={res} />
+              <RestaurantCard key={res.info["id"]} resObj={res} />
             )}
           </Link>
         ))}
